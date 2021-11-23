@@ -60,6 +60,9 @@
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-n9-Obx">
                                 <rect key="frame" x="41" y="144" width="332" height="31"/>
+                                <connections>
+                                    <action selector="view1SliderAction:" destination="V8G-lf-Vic" eventType="valueChanged" id="wdS-bq-QED"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-8l-687">
                                 <rect key="frame" x="167" y="69" width="80" height="40"/>
