@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-Aw-v5d" customClass="View2">
-                                <rect key="frame" x="41" y="144" width="332" height="31"/>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-0I-My7">
                                 <rect key="frame" x="167" y="69" width="80" height="40"/>
                                 <constraints>
@@ -29,26 +26,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Az0-RK-cZ1">
+                                <rect key="frame" x="41" y="144" width="332" height="31"/>
+                                <connections>
+                                    <action selector="view2SliderAction:" destination="a8Y-aH-FAY" eventType="valueChanged" id="iLw-FL-WVK"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fy2-JT-BDW"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="Az0-RK-cZ1" firstAttribute="top" secondItem="uXE-0I-My7" secondAttribute="bottom" constant="35" id="98E-yk-scd"/>
                             <constraint firstItem="uXE-0I-My7" firstAttribute="centerX" secondItem="bfS-mi-O2a" secondAttribute="centerX" id="Gba-Wi-cKd"/>
-                            <constraint firstItem="TOC-Aw-v5d" firstAttribute="top" secondItem="uXE-0I-My7" secondAttribute="bottom" constant="35" id="ZKE-PY-zai"/>
-                            <constraint firstItem="TOC-Aw-v5d" firstAttribute="centerX" secondItem="bfS-mi-O2a" secondAttribute="centerX" id="aoJ-p4-0XW"/>
-                            <constraint firstItem="TOC-Aw-v5d" firstAttribute="leading" secondItem="Fy2-JT-BDW" secondAttribute="leading" constant="43" id="bcd-dg-Hkm"/>
+                            <constraint firstItem="Az0-RK-cZ1" firstAttribute="centerX" secondItem="bfS-mi-O2a" secondAttribute="centerX" id="jJP-AI-9Eg"/>
+                            <constraint firstItem="Az0-RK-cZ1" firstAttribute="leading" secondItem="Fy2-JT-BDW" secondAttribute="leading" constant="43" id="nJI-vY-htR"/>
                             <constraint firstItem="uXE-0I-My7" firstAttribute="top" secondItem="Fy2-JT-BDW" secondAttribute="top" constant="25" id="tvm-6v-Qa6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="0VX-F1-Mnv"/>
                     <connections>
                         <outlet property="view2Label" destination="uXE-0I-My7" id="gui-0I-Aft"/>
-                        <outlet property="view2Slider" destination="TOC-Aw-v5d" id="cXD-1w-DJi"/>
+                        <outlet property="view2Slider" destination="Az0-RK-cZ1" id="hDN-uK-c3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0s-eG-XzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="423"/>
+            <point key="canvasLocation" x="144.92753623188406" y="422.54464285714283"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="qml-Pc-ykj">
