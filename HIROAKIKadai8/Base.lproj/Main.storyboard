@@ -16,13 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-Aw-v5d">
-                                <rect key="frame" x="41" y="161" width="332" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-Aw-v5d">
+                                <rect key="frame" x="41" y="144" width="332" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-0I-My7">
-                                <rect key="frame" x="158" y="87" width="99" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-0I-My7">
+                                <rect key="frame" x="167" y="69" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hpG-wP-W96"/>
+                                    <constraint firstAttribute="width" constant="80" id="xoG-nC-Mu7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,6 +32,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fy2-JT-BDW"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="uXE-0I-My7" firstAttribute="centerX" secondItem="bfS-mi-O2a" secondAttribute="centerX" id="Gba-Wi-cKd"/>
+                            <constraint firstItem="TOC-Aw-v5d" firstAttribute="top" secondItem="uXE-0I-My7" secondAttribute="bottom" constant="35" id="ZKE-PY-zai"/>
+                            <constraint firstItem="TOC-Aw-v5d" firstAttribute="centerX" secondItem="bfS-mi-O2a" secondAttribute="centerX" id="aoJ-p4-0XW"/>
+                            <constraint firstItem="TOC-Aw-v5d" firstAttribute="leading" secondItem="Fy2-JT-BDW" secondAttribute="leading" constant="43" id="bcd-dg-Hkm"/>
+                            <constraint firstItem="uXE-0I-My7" firstAttribute="top" secondItem="Fy2-JT-BDW" secondAttribute="top" constant="25" id="tvm-6v-Qa6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="0VX-F1-Mnv"/>
                     <connections>
@@ -49,13 +58,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-n9-Obx">
-                                <rect key="frame" x="41" y="144" width="332" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-n9-Obx">
+                                <rect key="frame" x="41" y="144" width="332" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-8l-687">
-                                <rect key="frame" x="158" y="70" width="99" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-8l-687">
+                                <rect key="frame" x="167" y="69" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4vd-Fp-USO"/>
+                                    <constraint firstAttribute="height" constant="40" id="p5b-T0-mHe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +74,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FtQ-or-Nsa"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="kLQ-n9-Obx" firstAttribute="centerX" secondItem="vdC-8l-687" secondAttribute="centerX" id="Hra-mC-seY"/>
+                            <constraint firstItem="kLQ-n9-Obx" firstAttribute="leading" secondItem="FtQ-or-Nsa" secondAttribute="leading" constant="43" id="NT8-M6-dc7"/>
+                            <constraint firstItem="vdC-8l-687" firstAttribute="top" secondItem="FtQ-or-Nsa" secondAttribute="top" constant="25" id="TZI-px-AbH"/>
+                            <constraint firstItem="vdC-8l-687" firstAttribute="centerX" secondItem="RtL-OO-PbR" secondAttribute="centerX" id="aVk-rC-osH"/>
+                            <constraint firstItem="kLQ-n9-Obx" firstAttribute="top" secondItem="vdC-8l-687" secondAttribute="bottom" constant="35" id="zG4-0L-PZy"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="OZM-Xx-0iT"/>
                     <connections>
