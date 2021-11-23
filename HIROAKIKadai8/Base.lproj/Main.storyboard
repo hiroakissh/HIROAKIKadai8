@@ -11,7 +11,7 @@
         <!--Item 2-->
         <scene sceneID="wCR-ar-zRD">
             <objects>
-                <viewController id="a8Y-aH-FAY" sceneMemberID="viewController">
+                <viewController id="a8Y-aH-FAY" customClass="View1ViewController" customModule="HIROAKIKadai8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfS-mi-O2a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,12 +22,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0s-eG-XzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146" y="379"/>
+            <point key="canvasLocation" x="145" y="423"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="qml-Pc-ykj">
             <objects>
-                <viewController id="V8G-lf-Vic" sceneMemberID="viewController">
+                <viewController id="V8G-lf-Vic" customClass="View1ViewController" customModule="HIROAKIKadai8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RtL-OO-PbR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
