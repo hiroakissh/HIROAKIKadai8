@@ -11,7 +11,7 @@ class View2ViewController: UIViewController {
     @IBOutlet private weak var view2Label: UILabel!
     @IBOutlet private weak var view2Slider: UISlider!
 
-    private let valueKEY = "value"
+    var delegate = UIApplication.shared.delegate as? AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +20,13 @@ class View2ViewController: UIViewController {
     }
 
     @IBAction private func view2SliderAction(_ sender: Any) {
-        let view2Value = view2Slider.value
-        view2Label.text = String(view2Value)
-        UserDefaults.standard.set(view2Value, forKey: valueKEY)
+        let view2Value = String(view2Slider.value)
+        view2Label.text = view2Value
+        delegate!.number = view2Value
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        let value = UserDefaults.standard.float(forKey: valueKEY)
-        view2Label.text = String(value)
-        view2Slider.value = value
+        view2Label.text = delegate?.number
+        view2Slider.value = Float(delegate!.number) ?? 0.0
     }
 }
