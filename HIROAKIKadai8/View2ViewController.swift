@@ -11,7 +11,10 @@ class View2ViewController: UIViewController {
     @IBOutlet private weak var view2Label: UILabel!
     @IBOutlet private weak var view2Slider: UISlider!
 
-    var delegate = UIApplication.shared.delegate as? AppDelegate
+    private var appDelegate: AppDelegate {
+        // swiftlint:disable:next force_cast
+        UIApplication.shared.delegate as! AppDelegate
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +25,11 @@ class View2ViewController: UIViewController {
     @IBAction private func view2SliderAction(_ sender: Any) {
         let view2Value = String(view2Slider.value)
         view2Label.text = view2Value
-        delegate!.number = view2Value
+        appDelegate.number = view2Value
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        view2Label.text = delegate?.number
-        view2Slider.value = Float(delegate!.number) ?? 0.0
+        view2Label.text = appDelegate.number
+        view2Slider.value = Float(appDelegate.number) ?? 0.0
     }
 }
